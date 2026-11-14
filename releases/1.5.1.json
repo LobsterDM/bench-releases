@@ -1,0 +1,11 @@
+{
+    "channel": "stable",
+    "version": "1.5.1",
+    "released": "2026-11-14T11:09:06+00:00",
+    "package": "https://raw.githubusercontent.com/LobsterDM/bench-releases/main/packages/bench-1.5.1.zip",
+    "full_package": "https://raw.githubusercontent.com/LobsterDM/bench-releases/main/packages/bench-1.5.1-full.zip",
+    "sha256": "3f886ee463a4babb052e1315e4bb3badb2bb7bee01f51f04e256959addeecb8c",
+    "size": 1475056,
+    "requires_php": "8.0",
+    "notes": "- **Updates now work.** This release has Bench's release signing key built in, so from here on sites find new versions in **Admin → Updates** and install fix releases by themselves. Sites on 1.5.0 or earlier need 1.5.1 uploaded by FTP once (the update package, `bench-1.5.1.zip`).\n- **Admin → Claude is now Admin → Connections.** Same screen and the same address (`admin/?view=claude`), just a clearer name in the menu and page title."
+}
