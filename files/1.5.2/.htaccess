@@ -1,0 +1,87 @@
+# Bench CMS — Apache config
+
+Options -Indexes
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # If installed in a sub-folder, set e.g.:  RewriteBase /site/
+    RewriteBase /
+
+    # Lets Admin → Security confirm these hardening rules are active on this server
+    <IfModule mod_env.c>
+        SetEnv BENCH_HARDENING 1
+    </IfModule>
+
+    # Let PHP see "Authorization: Bearer …" (the Claude connector), which some hosts drop
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Claude connector sign-in metadata (Admin → Claude)
+    RewriteRule ^\.well-known/oauth-authorization-server(/.*)?$ admin/oauth.php/authorization-server [L]
+    RewriteRule ^\.well-known/openid-configuration(/.*)?$ admin/oauth.php/openid-configuration [L]
+    RewriteRule ^\.well-known/oauth-protected-resource(/.*)?$ admin/oauth.php/protected-resource [L]
+
+    # Block direct access to internals, dev files and docs
+    RewriteRule ^(content|core|demos|docs|tests|tools)(/|$) - [F,L]
+    RewriteRule ^(config|router)\.php$ - [F,L]
+    RewriteRule ^(plugins|custom)/.*\.php$ - [F,L]
+    # Hidden files and folders (.git, .env…) except .well-known (SSL certificates)
+    RewriteRule (^|/)\.(?!well-known/) - [F,L]
+
+    # --- Only the admin area ever receives data ---
+    # The public site never accepts POST: contact forms send straight to the form
+    # service. Refusing other methods here means PHP never parses a request body
+    # outside /admin/, which removes most of the exposure to request-parsing bugs
+    # in PHP itself (such as PHP2Shell, CVE-2026-109618 / CVE-2026-109619).
+    RewriteCond %{REQUEST_METHOD} !^(GET|HEAD)$
+    RewriteCond %{REQUEST_URI} !/admin/(index\.php|api\.php|mcp\.php|oauth\.php/(register|token|authorize))?$
+    RewriteRule ^ - [F,L]
+    # File uploads (multipart) are only needed by the admin's upload endpoint
+    RewriteCond %{HTTP:Content-Type} multipart/ [NC]
+    RewriteCond %{REQUEST_URI} !/admin/api\.php$
+    RewriteRule ^ - [F,L]
+
+    # Pretty URLs: /services → index.php?p=services, /cars/some-car → index.php?p=cars/some-car
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^([a-z0-9\-]+(/[a-z0-9\-]+)?)/?$ index.php?p=$1 [L,QSA]
+</IfModule>
+
+# Fallback for hosts without mod_rewrite: let index.php handle short links.
+# (If you install in a sub-folder, change this to e.g. /site/index.php)
+<IfModule !mod_rewrite.c>
+    ErrorDocument 404 /index.php
+</IfModule>
+
+# Readme, notes, patches and archives are never served
+<FilesMatch "\.(md|patch|diff|zip|log|bak|sql|sh|ini)$|~$">
+    Require all denied
+</FilesMatch>
+
+# Safer PHP settings, applied only where PHP runs as an Apache module (mod_php).
+# Hosts using PHP-FPM / LiteSpeed need these in php.ini or the pool config instead
+# (see README → Security). Bench doesn't use any of the features switched off here.
+<IfModule mod_php.c>
+    php_flag session.upload_progress.enabled off
+    php_flag display_errors off
+    php_flag session.use_strict_mode on
+    php_value post_max_size 8M
+    php_value upload_max_filesize 6M
+</IfModule>
+<IfModule mod_php7.c>
+    php_flag session.upload_progress.enabled off
+    php_flag display_errors off
+    php_flag session.use_strict_mode on
+    php_value post_max_size 8M
+    php_value upload_max_filesize 6M
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+    # Don't advertise the PHP version to scanners
+    Header always unset X-Powered-By
+    Header unset X-Powered-By
+</IfModule>

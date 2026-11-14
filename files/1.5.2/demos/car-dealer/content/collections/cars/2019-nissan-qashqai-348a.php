@@ -1,0 +1,36 @@
+<?php http_response_code(403); exit; ?>
+{
+    "make": "Nissan",
+    "model": "Qashqai",
+    "variant": "1.3 DIG-T N-Connecta 5dr",
+    "year": "2019",
+    "price": "13250",
+    "was_price": "",
+    "status": "available",
+    "finance": "From £215/month",
+    "featured": true,
+    "reg": "",
+    "mileage": "36700",
+    "fuel": "Petrol",
+    "gearbox": "Manual",
+    "body": "SUV",
+    "engine": "1.3L",
+    "colour": "Gun Metallic",
+    "doors": "5",
+    "owners": "2",
+    "mot": "2027-07-19",
+    "history": "Full service history",
+    "ulez": true,
+    "images": [
+        "uploads/demo-cars/nissan-qashqai-1.jpg",
+        "uploads/demo-cars/nissan-qashqai-2.jpg",
+        "uploads/demo-cars/nissan-qashqai-3.jpg",
+        "uploads/demo-cars/nissan-qashqai-4.jpg"
+    ],
+    "description": "Practical family SUV with a high driving position, a big boot and plenty of kit. Panoramic glass roof and 360° camera make this one stand out.",
+    "features": "360° camera\nPanoramic glass roof\nSat nav\nKeyless entry\nDual-zone climate\n18\" alloys",
+    "meta_description": "",
+    "created": "2026-10-07T07:50:28+01:00",
+    "updated": "2026-10-07T07:50:28+01:00",
+    "updated_by": "demo"
+}

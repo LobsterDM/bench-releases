@@ -1,0 +1,13 @@
+{
+    "channel": "stable",
+    "version": "1.5.2",
+    "released": "2026-11-14T12:11:42+00:00",
+    "package": "https://raw.githubusercontent.com/LobsterDM/bench-releases/main/packages/bench-1.5.2.zip",
+    "full_package": "https://raw.githubusercontent.com/LobsterDM/bench-releases/main/packages/bench-1.5.2-full.zip",
+    "sha256": "45698de3e42edd417323afe4f1f7158a6d362f04bbbc4c7b248c9bebf2876543",
+    "size": 1558640,
+    "files": "https://raw.githubusercontent.com/LobsterDM/bench-releases/main/files/1.5.2",
+    "file_list_sha256": "a468cc5783604f8c275fc956bb1886fd491bbe2d1c860aa3f068e9995fe08ce6",
+    "requires_php": "8.0",
+    "notes": "- **Updates now work on hosts that don't have PHP's sodium or zip extensions**, such as Fasthosts. Admin → Updates no longer asks you to get them enabled.\n  - Without sodium, Bench checks each release's signature with built-in pure-PHP code (from paragonie/sodium_compat, the same code WordPress uses for this).\n  - Without zip, Bench downloads only the files that changed, one at a time, and checks every file against the signed release before installing anything.\n  - Hosts that have both work exactly as before.\n- **Sites on 1.5.1 without sodium can't check this release themselves,** so upload `bench-1.5.2.zip` by FTP once. After that, updates install from Admin → Updates.\n- Releases now also publish their files unpacked (`files/X.Y.Z/` in the release channel), with the file list's hash in the signed manifest.\n- The updater test runs a second time with sodium and zip removed (`BENCH_NO_EXT=1 tests/updater.sh`)."
+}

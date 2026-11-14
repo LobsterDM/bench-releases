@@ -1,0 +1,36 @@
+<?php http_response_code(403); exit; ?>
+{
+    "make": "Skoda",
+    "model": "Octavia",
+    "variant": "Estate 2.0 TDI SE L 5dr",
+    "year": "2017",
+    "price": "8995",
+    "was_price": "",
+    "status": "available",
+    "finance": "",
+    "featured": false,
+    "reg": "",
+    "mileage": "71300",
+    "fuel": "Diesel",
+    "gearbox": "Manual",
+    "body": "Estate",
+    "engine": "2.0L",
+    "colour": "Brilliant Silver",
+    "doors": "5",
+    "owners": "3",
+    "mot": "2027-08-19",
+    "history": "Full service history",
+    "ulez": true,
+    "images": [
+        "uploads/demo-cars/skoda-octavia-1.jpg",
+        "uploads/demo-cars/skoda-octavia-2.jpg",
+        "uploads/demo-cars/skoda-octavia-3.jpg",
+        "uploads/demo-cars/skoda-octavia-4.jpg"
+    ],
+    "description": "Huge boot, comfortable ride and 60 mpg — the ultimate family workhorse. Cambelt changed at 60k with receipts.",
+    "features": "Heated leather seats\nSat nav\nCruise control\nTowbar\nFront & rear parking sensors",
+    "meta_description": "",
+    "created": "2026-10-09T07:50:28+01:00",
+    "updated": "2026-10-09T07:50:28+01:00",
+    "updated_by": "demo"
+}
