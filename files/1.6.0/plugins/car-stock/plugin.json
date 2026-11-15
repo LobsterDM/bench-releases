@@ -1,0 +1,6 @@
+{
+  "name": "Car Stock",
+  "description": "For used car dealers: add cars with photos, specs and prices, show them in a filterable stock list, and give every car its own page with an enquiry form.",
+  "version": "1.0",
+  "author": "Bench"
+}

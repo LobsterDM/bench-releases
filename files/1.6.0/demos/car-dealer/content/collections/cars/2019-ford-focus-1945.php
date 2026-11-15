@@ -1,0 +1,36 @@
+<?php http_response_code(403); exit; ?>
+{
+    "make": "Ford",
+    "model": "Focus",
+    "variant": "1.0 EcoBoost Titanium 5dr",
+    "year": "2019",
+    "price": "11995",
+    "was_price": "",
+    "status": "available",
+    "finance": "From £199/month",
+    "featured": true,
+    "reg": "",
+    "mileage": "32400",
+    "fuel": "Petrol",
+    "gearbox": "Manual",
+    "body": "Hatchback",
+    "engine": "1.0L",
+    "colour": "Desert Island Blue",
+    "doors": "5",
+    "owners": "2",
+    "mot": "2027-03-19",
+    "history": "Full service history",
+    "ulez": true,
+    "images": [
+        "uploads/demo-cars/ford-focus-1.jpg",
+        "uploads/demo-cars/ford-focus-2.jpg",
+        "uploads/demo-cars/ford-focus-3.jpg",
+        "uploads/demo-cars/ford-focus-4.jpg"
+    ],
+    "description": "A lovely one-careful-owner-from-new Focus in the popular Titanium trim. Cheap to run, great to drive and in excellent condition inside and out.\n\nSupplied with a fresh service, new MOT and two keys.",
+    "features": "Apple CarPlay & Android Auto\nSat nav\nCruise control\nDual-zone climate control\nRear parking sensors\nHeated windscreen\nKeyless start\nLED daytime running lights",
+    "meta_description": "",
+    "created": "2026-09-29T07:50:28+01:00",
+    "updated": "2026-09-29T07:50:28+01:00",
+    "updated_by": "demo"
+}

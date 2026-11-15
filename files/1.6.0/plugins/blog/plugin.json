@@ -1,0 +1,6 @@
+{
+  "name": "Blog",
+  "description": "News and blog posts with a featured image, categories, tags, author and date. Schedule posts to go live at a chosen time. Adds a \"Blog posts\" section, a page per post, category, tag and author archives, and an RSS feed.",
+  "version": "1.0",
+  "author": "Bench"
+}

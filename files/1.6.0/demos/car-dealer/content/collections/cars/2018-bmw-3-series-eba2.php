@@ -1,0 +1,36 @@
+<?php http_response_code(403); exit; ?>
+{
+    "make": "BMW",
+    "model": "3 Series",
+    "variant": "320d M Sport Auto 4dr",
+    "year": "2018",
+    "price": "15495",
+    "was_price": "16295",
+    "status": "available",
+    "finance": "From £249/month",
+    "featured": true,
+    "reg": "",
+    "mileage": "48900",
+    "fuel": "Diesel",
+    "gearbox": "Automatic",
+    "body": "Saloon",
+    "engine": "2.0L",
+    "colour": "Black Sapphire",
+    "doors": "4",
+    "owners": "2",
+    "mot": "2027-05-19",
+    "history": "Full service history",
+    "ulez": true,
+    "images": [
+        "uploads/demo-cars/bmw-320d-1.jpg",
+        "uploads/demo-cars/bmw-320d-2.jpg",
+        "uploads/demo-cars/bmw-320d-3.jpg",
+        "uploads/demo-cars/bmw-320d-4.jpg"
+    ],
+    "description": "Sharp-looking 320d M Sport with the 8-speed automatic. Strong, refined and capable of 55+ mpg on a run. Reduced for a quick sale.",
+    "features": "M Sport body kit & suspension\nHeated sports seats\nBusiness navigation\nLED headlights\nBluetooth & DAB\n18\" alloy wheels\nRear parking sensors",
+    "meta_description": "",
+    "created": "2026-10-03T07:50:28+01:00",
+    "updated": "2026-10-03T07:50:28+01:00",
+    "updated_by": "demo"
+}

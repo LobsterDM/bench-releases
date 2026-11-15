@@ -1,0 +1,36 @@
+<?php http_response_code(403); exit; ?>
+{
+    "make": "Vauxhall",
+    "model": "Corsa",
+    "variant": "1.4 SRi 3dr",
+    "year": "2016",
+    "price": "5995",
+    "was_price": "",
+    "status": "sold",
+    "finance": "",
+    "featured": false,
+    "reg": "",
+    "mileage": "54000",
+    "fuel": "Petrol",
+    "gearbox": "Manual",
+    "body": "Hatchback",
+    "engine": "1.4L",
+    "colour": "Summer Yellow",
+    "doors": "3",
+    "owners": "3",
+    "mot": "2027-10-19",
+    "history": "Part service history",
+    "ulez": false,
+    "images": [
+        "uploads/demo-cars/vauxhall-corsa-1.jpg",
+        "uploads/demo-cars/vauxhall-corsa-2.jpg",
+        "uploads/demo-cars/vauxhall-corsa-3.jpg",
+        "uploads/demo-cars/vauxhall-corsa-4.jpg"
+    ],
+    "description": "Ideal first car — cheap insurance group and great fun to drive.",
+    "features": "Sports seats\nBluetooth\nCruise control",
+    "meta_description": "",
+    "created": "2026-10-13T07:50:28+01:00",
+    "updated": "2026-10-13T07:50:28+01:00",
+    "updated_by": "demo"
+}

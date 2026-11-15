@@ -1,0 +1,36 @@
+<?php http_response_code(403); exit; ?>
+{
+    "make": "Kia",
+    "model": "Sportage",
+    "variant": "1.6 GDi 2 5dr",
+    "year": "2020",
+    "price": "15250",
+    "was_price": "",
+    "status": "available",
+    "finance": "From £245/month",
+    "featured": false,
+    "reg": "",
+    "mileage": "29800",
+    "fuel": "Petrol",
+    "gearbox": "Manual",
+    "body": "SUV",
+    "engine": "1.6L",
+    "colour": "Racing Green",
+    "doors": "5",
+    "owners": "1",
+    "mot": "2027-09-19",
+    "history": "Full dealer history",
+    "ulez": true,
+    "images": [
+        "uploads/demo-cars/kia-sportage-1.jpg",
+        "uploads/demo-cars/kia-sportage-2.jpg",
+        "uploads/demo-cars/kia-sportage-3.jpg",
+        "uploads/demo-cars/kia-sportage-4.jpg"
+    ],
+    "description": "Balance of Kia's 7-year warranty transfers to the new owner — real peace of mind. Spacious, well equipped and lovely to drive.",
+    "features": "Remaining manufacturer warranty\nReversing camera\nSat nav\nApple CarPlay\nRoof rails",
+    "meta_description": "",
+    "created": "2026-10-11T07:50:28+01:00",
+    "updated": "2026-10-11T07:50:28+01:00",
+    "updated_by": "demo"
+}

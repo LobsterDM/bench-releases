@@ -1,0 +1,36 @@
+<?php http_response_code(403); exit; ?>
+{
+    "make": "MG",
+    "model": "ZS",
+    "variant": "EV Trophy Long Range 5dr",
+    "year": "2022",
+    "price": "16495",
+    "was_price": "",
+    "status": "available",
+    "finance": "From £269/month",
+    "featured": true,
+    "reg": "",
+    "mileage": "12400",
+    "fuel": "Electric",
+    "gearbox": "Automatic",
+    "body": "SUV",
+    "engine": "Electric",
+    "colour": "Dynamic Blue",
+    "doors": "5",
+    "owners": "1",
+    "mot": "2027-11-19",
+    "history": "Full dealer history",
+    "ulez": true,
+    "images": [
+        "uploads/demo-cars/mg-zs-ev-1.jpg",
+        "uploads/demo-cars/mg-zs-ev-2.jpg",
+        "uploads/demo-cars/mg-zs-ev-3.jpg",
+        "uploads/demo-cars/mg-zs-ev-4.jpg"
+    ],
+    "description": "Up to 273 miles of range, zero road tax and remaining MG warranty until 2029. Comes with home and public charging cables.",
+    "features": "273-mile WLTP range\nHeated leather seats\nPanoramic sunroof\n360° camera\nWireless phone charging\nRemaining MG warranty",
+    "meta_description": "",
+    "created": "2026-10-15T07:50:28+01:00",
+    "updated": "2026-10-15T07:50:28+01:00",
+    "updated_by": "demo"
+}

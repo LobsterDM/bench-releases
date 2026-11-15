@@ -1,0 +1,36 @@
+<?php http_response_code(403); exit; ?>
+{
+    "make": "Toyota",
+    "model": "Yaris",
+    "variant": "1.5 Hybrid Design CVT 5dr",
+    "year": "2021",
+    "price": "15995",
+    "was_price": "",
+    "status": "reserved",
+    "finance": "From £259/month",
+    "featured": false,
+    "reg": "",
+    "mileage": "18200",
+    "fuel": "Hybrid",
+    "gearbox": "Automatic",
+    "body": "Hatchback",
+    "engine": "1.5L",
+    "colour": "Tokyo Red",
+    "doors": "5",
+    "owners": "1",
+    "mot": "2027-06-19",
+    "history": "Full dealer history",
+    "ulez": true,
+    "images": [
+        "uploads/demo-cars/toyota-yaris-1.jpg",
+        "uploads/demo-cars/toyota-yaris-2.jpg",
+        "uploads/demo-cars/toyota-yaris-3.jpg",
+        "uploads/demo-cars/toyota-yaris-4.jpg"
+    ],
+    "description": "Brilliant self-charging hybrid — perfect for city driving with 60+ mpg. Remaining Toyota warranty with annual service.",
+    "features": "Reversing camera\nApple CarPlay & Android Auto\nAdaptive cruise\nAuto lights & wipers\nLane trace assist",
+    "meta_description": "",
+    "created": "2026-10-05T07:50:28+01:00",
+    "updated": "2026-10-05T07:50:28+01:00",
+    "updated_by": "demo"
+}

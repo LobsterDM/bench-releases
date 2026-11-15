@@ -1,0 +1,27 @@
+<?php http_response_code(403); exit; ?>
+{
+    "business_name": "Taff Valley Plumbing & Heating",
+    "tagline": "Cardiff's local plumbers since 2009",
+    "logo": "",
+    "phone": "029 2018 0123",
+    "email": "hello@taffvalley.example",
+    "address": "Unit 4, Riverside Trade Park\nCardiff CF11 0AA",
+    "hours": "Mon–Fri 8am–6pm · Sat 9am–1pm",
+    "announcement": "24/7 emergency call-outs across Cardiff & the Vale",
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "footer_text": "Family-run, Gas Safe registered plumbing and heating engineers covering Cardiff, Penarth and the Vale of Glamorgan. Fully insured, fixed prices, no call-out charge in our core area.",
+    "theme": "trade",
+    "brand_color": "",
+    "accent_color": "",
+    "form_provider": "web3forms",
+    "form_endpoint": "",
+    "form_access_key": "YOUR-WEB3FORMS-KEY",
+    "form_subject": "New enquiry from taffvalley website",
+    "form_services": "Emergency repair\nBoiler installation\nBoiler service or repair\nBathroom refit\nRadiators & heating\nGeneral plumbing\nSomething else",
+    "form_success": "Thanks — we've got your message and will call you back within 2 working hours.",
+    "form_embed": "",
+    "default_description": "Gas Safe registered plumbers and heating engineers in Cardiff. Boiler installs, repairs, bathrooms and 24/7 emergency call-outs. Free, fixed-price quotes.",
+    "schema_type": "Plumber",
+    "head_code": ""
+}

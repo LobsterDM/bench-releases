@@ -1,0 +1,36 @@
+<?php http_response_code(403); exit; ?>
+{
+    "make": "Volkswagen",
+    "model": "Golf",
+    "variant": "1.5 TSI EVO Life 5dr",
+    "year": "2020",
+    "price": "14750",
+    "was_price": "",
+    "status": "available",
+    "finance": "From £239/month",
+    "featured": true,
+    "reg": "",
+    "mileage": "24100",
+    "fuel": "Petrol",
+    "gearbox": "Manual",
+    "body": "Hatchback",
+    "engine": "1.5L",
+    "colour": "Pure White",
+    "doors": "5",
+    "owners": "1",
+    "mot": "2027-04-19",
+    "history": "Full dealer history",
+    "ulez": true,
+    "images": [
+        "uploads/demo-cars/vw-golf-1.jpg",
+        "uploads/demo-cars/vw-golf-2.jpg",
+        "uploads/demo-cars/vw-golf-3.jpg",
+        "uploads/demo-cars/vw-golf-4.jpg"
+    ],
+    "description": "The Mk8 Golf in Life spec — digital cockpit, adaptive cruise and a smooth, economical 1.5 TSI engine. One owner and full VW dealer history.",
+    "features": "Digital cockpit\nAdaptive cruise control\nLane assist\nWireless App-Connect\nLED headlights\nFront & rear parking sensors",
+    "meta_description": "",
+    "created": "2026-10-01T07:50:28+01:00",
+    "updated": "2026-10-01T07:50:28+01:00",
+    "updated_by": "demo"
+}
